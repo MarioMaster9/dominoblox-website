@@ -41,11 +41,11 @@
         </style>
     </head>
     <body style="border: none; margin: 0;">
-        <form name="AdForm" method="post" action="/Ads/IFrameAdContent.aspx?slot=<% Response["slot"]  %>" id="AdForm">
+        <form name="AdForm" method="post" action="/Ads/IFrameAdContent.aspx?slot=@Response["slot"]" id="AdForm">
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNzcxNDY4Ng9kFgICAw9kFgICAQ8WAh4EVGV4dAUmIlJvYmxveF9Ib21lX01lZGl1bV9SZWN0YW5nbGVfMzAweDI1MCJkZECLqVxEdzGACCbYya1aMEdaqwLo" />
 
             <script type="text/javascript">
-                GA_googleFillSlot("<% Response["slot"]  %>");
+                GA_googleFillSlot("@Response["slot"]");
             </script>
             <div id="GoshItsFreezing">
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
