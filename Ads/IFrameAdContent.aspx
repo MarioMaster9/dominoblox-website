@@ -1,3 +1,5 @@
+<%@ Page Title="Home Page" Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="IFrameAdContent._Default" %>
+
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -5,7 +7,7 @@
     <head><title>
 	ROBLOX – a kids, parents, and family activity site for building toy amusement parks, rc cars, clothing, and electronic devices out of construction blocks that are as realistic as a movie or tv show
 </title>
-        <script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+        <script type="text/javascript" src="https://partner.googleadservices.com/gampad/google_service.js">
         </script>
         <script type="text/javascript">
             GS_googleAddAdSenseService("ca-pub-2247123265392502");
@@ -41,11 +43,11 @@
         </style>
     </head>
     <body style="border: none; margin: 0;">
-        <form name="AdForm" method="post" action="/Ads/IFrameAdContent.aspx?slot=@Request.QueryString['slot']" id="AdForm">
+        <form name="AdForm" method="post" action="/Ads/IFrameAdContent.aspx?slot=<%: Request.QueryString["slot"]%>" id="AdForm">
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTYyNzcxNDY4Ng9kFgICAw9kFgICAQ8WAh4EVGV4dAUmIlJvYmxveF9Ib21lX01lZGl1bV9SZWN0YW5nbGVfMzAweDI1MCJkZECLqVxEdzGACCbYya1aMEdaqwLo" />
 
             <script type="text/javascript">
-                GA_googleFillSlot("@Request.QueryString['slot']");
+                GA_googleFillSlot("<%: Request.QueryString["slot"]%>");
             </script>
             <div id="GoshItsFreezing">
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -66,3 +68,4 @@
         </form>
     </body>
 </html>
+
